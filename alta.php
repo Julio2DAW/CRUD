@@ -8,8 +8,8 @@
     <head>
       <meta charset="UTF-8" />
       <meta name=author content=jramosgago.guadalupe@alumnado.fundacionloyola.net />
-      <meta name=description content='Ejercicio 10' />
-      <meta name=keywords content='Ejercicios JavaScript' />
+      <meta name=description content='Aplicacion Empleados' />
+      <meta name=keywords content='Ejercicio php' />
       <title>CRUD-ALTA</title>
     </head>
     <body>
