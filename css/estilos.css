@@ -1,5 +1,104 @@
 /*
-  Estilos de las etiquetas HTML
+  Estilos APP
   Autor: Julio Antonio Ramos Gago <jramosgago.guadalupe@alumnado.fundacionloyola.net>
   Año 2021
 */
+/*Fuente de GOOGLE*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+/*Reset*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/*Estilo Body*/
+body{
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/*Estilos H*/
+h1{
+  font-size: 80pt;
+  text-align: center;
+  font-family: "Fredoka One";
+  text-shadow: 9px -7px 7px white;
+  margin-bottom: 20px;
+}
+h2{
+  font-size: 70pt;
+  text-align: center;
+  font-family: "Fredoka One";
+  text-shadow: 9px -7px 7px white;
+  margin-bottom: 20px;
+}
+h2{
+  font-size: 50pt;
+  font-family: "Fredoka One";
+  text-shadow: 9px -7px 7px white;
+}
+/*index, alta, borrar, consultar, modificar*/
+.container-menu{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 400px;
+  width: 80%;
+  backdrop-filter: blur(20px);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.container-menu div{
+  text-align: center;
+  width: 50%;
+  margin-top: 180px;
+}
+.container-menu div a{
+  background-color: black;
+  padding: 40px;
+  border-radius: 5px;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  color: white;
+}
+/*Alta*/
+.container-form{
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 500px;
+  width: 80%;
+  backdrop-filter: blur(20px);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container-form form{
+  background-color: black;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.container-form form input[type="submit"], input[type="reset"]{
+  background-color: white;
+  margin: 20px 0px;
+  padding: 10px;
+  width: 200px;
+}
+.container-form form a{
+  color: white;
+}
+.center{
+  text-align: center;
+  font-size: 24px;
+  width: 80%;
+  backdrop-filter: blur(20px);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 0 auto;
+}
