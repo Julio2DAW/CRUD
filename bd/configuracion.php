@@ -7,5 +7,5 @@
     define("HOSTNAME", "localhost");
     define("USERNAME", "root");
     define("PW", "");
-    define("DB", "empleados");
+    define("DB", "bdempleados");
 ?>

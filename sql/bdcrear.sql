@@ -1,4 +1,4 @@
-CREATE DATABASE empresa;
+CREATE DATABASE bdempleados;
 
 CREATE TABLE Empleados(
     idEmpleado tinyint UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,

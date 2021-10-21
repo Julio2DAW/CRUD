@@ -14,5 +14,8 @@
     </head>
     <body>
       <h2>Borrar Empleados</h2>
+      <form action="borrar.php" method="post">
+
+      </form>
     </body>
 </html>

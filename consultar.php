@@ -26,6 +26,21 @@
         </form>
         <!--Volver a la página de inicio-->
         <a href="index.html">Volver</a>
-        
+        <?php
+            //Al buscar, mostrará los empleados en base al filtrado seleccionado
+            if($_POST){
+                if(trim($_POST['dni'])=="")
+                    $consulta="SELECT * FROM empleados ORDER BY nombre ".$_POST['filtrado'].";";
+                else
+                    $consulta="SELECT * FROM empleados WHERE dni LIKE '".$_POST['dni']."%' ORDER BY nombre ".$_POST['filtrado'].";";
+                $resultado=$conectar->query($consulta);
+                echo '<table>';
+                while($fila=$resultado->fetch_assoc()){
+                    echo '<p>'.$fila['dni'].': </p>';
+                    echo '<p>'.$fila['nombre'].'</p>';
+                    echo '<p><a href="borrar.php?id='.$fila['idEmpleado'].'">Borrar</a><a href="modificar.php?id='.$fila['idEmpleado'].'">Modificar</a></p>';
+                }
+            }
+        ?>
     </body>
 </html>
