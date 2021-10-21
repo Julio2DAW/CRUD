@@ -1,5 +1,5 @@
 <?php
-    require 'bd/configuracion.php'; //Acceso a la base de datos.
+    require 'bd/configbd.php'; //Acceso a la base de datos.
     $conectar = new mysqli(HOSTNAME, USERNAME, PW, DB);
 ?>
 <!DOCTYPE html>

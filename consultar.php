@@ -1,5 +1,5 @@
 <?php
-    require 'bd/configuracion.php'; //Acceso a la base de datos.
+    require 'bd/configbd.php'; //Acceso a la base de datos.
     $conectar = new mysqli(HOSTNAME, USERNAME, PW, DB);
 ?>
 <!DOCTYPE html>
@@ -36,9 +36,9 @@
                 $resultado=$conectar->query($consulta);
                 echo '<table>';
                 while($fila=$resultado->fetch_assoc()){
-                    echo '<p>'.$fila['dni'].': </p>';
-                    echo '<p>'.$fila['nombre'].'</p>';
-                    echo '<p><a href="borrar.php?id='.$fila['idEmpleado'].'">Borrar</a><a href="modificar.php?id='.$fila['idEmpleado'].'">Modificar</a></p>';
+                    echo '<p> DNI: '.$fila['dni'].' -> Nombre: '.$fila['nombre'].'</p>';
+                    echo '<p><a href="borrar.php?id='.$fila['idEmpleado'].'">Borrar</a></p>';
+                    echo '<p><a href="modificar.php?id='.$fila['idEmpleado'].'">Modificar</a></p>';
                 }
             }
         ?>
